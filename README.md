@@ -1,3 +1,7 @@
+[![CI Status](https://github.com/wendelscardua/golden_section_search/workflows/CI/badge.svg?branch=main)](https://github.com/wendelscardua/golden_section_search/actions?query=workflow%3ACI+branch%3Amain)
+[![Gem Version](https://badge.fury.io/rb/golden_section_search.svg)](https://badge.fury.io/rb/golden_section_search)
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/github/wendelscardua/golden_section_search)
+
 # GoldenSectionSearch
 
 Compute a local minimum / maximum of an arbitrary function
