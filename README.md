@@ -1,8 +1,6 @@
 # GoldenSectionSearch
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/golden_section_search`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Compute a local minimum / maximum of an arbitrary function
 
 ## Installation
 
@@ -22,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To find a local minimum of a function defined by a proc, between `left_value` and `right_value`, with some `tolerance`:
+
+```ruby
+GoldenSectionSearch.find_minimum(proc, left_value, right_value, tolerance)
+```
+
+For finding a maximum value instead:
+
+```ruby
+GoldenSectionSearch.find_maximum(proc, left_value, right_value, tolerance)
+```
+
+Tolerance can be omitted, the default value being `1.0e-5`.
 
 ## Development
 
@@ -32,8 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/golden_section_search. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/golden_section_search/blob/master/CODE_OF_CONDUCT.md).
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/wendelscardua/golden_section_search. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/wendelscardua/golden_section_search/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -41,4 +50,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the GoldenSectionSearch project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/golden_section_search/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the GoldenSectionSearch project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/wendelscardua/golden_section_search/blob/master/CODE_OF_CONDUCT.md).
